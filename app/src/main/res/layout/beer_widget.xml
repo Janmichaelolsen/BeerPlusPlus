@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:weightSum="1"
+    tools:showIn="@layout/beer_widget_info"
+    tools:context="com.example.michael.beerplusplus.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Today"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:textColor="#84878787"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:id="@+id/appwidget_text"
+            android:textSize="55dp"
+            android:textColor="#1ADC6C"
+            android:gravity="center_horizontal"
+            android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+    <ImageButton
+        android:layout_width="77dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton3"
+        android:src="@mipmap/widget_icon"
+        android:layout_weight="0.03"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

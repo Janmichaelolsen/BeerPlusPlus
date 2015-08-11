@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="44dp"
+                android:id="@+id/imageButton2"
+                android:layout_gravity="right"
+                android:src="@mipmap/gear"
+                android:onClick="goToSettings"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="This month"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textColor="#ae505050" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView5"
+                android:textSize="100dp"
+                android:textColor="#1ADC6C"
+                android:gravity="center_horizontal"
+                android:autoText="false"
+                android:paddingTop="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="This year"
+                android:id="@+id/textView8"
+                android:gravity="center"
+                android:textColor="#ae505050"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView9"
+                android:textSize="100dp"
+                android:textColor="#1ADC6C"
+                android:gravity="center_horizontal"
+                android:autoText="false"
+                android:paddingTop="0dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Total"
+                android:id="@+id/textView6"
+                android:gravity="center"
+                android:textColor="#ae505050"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView7"
+                android:textSize="100dp"
+                android:textColor="#1ADC6C"
+                android:gravity="center_horizontal"
+                android:autoText="false"
+                android:paddingTop="0dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Record"
+                android:id="@+id/textView10"
+                android:gravity="center"
+                android:textColor="#ae505050"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView11"
+                android:textSize="100dp"
+                android:textColor="#1ADC6C"
+                android:gravity="center_horizontal"
+                android:autoText="false"
+                android:paddingTop="0dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Average beer/week"
+                android:id="@+id/textView12"
+                android:gravity="center"
+                android:textColor="#ae505050"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView13"
+                android:textSize="100dp"
+                android:textColor="#1ADC6C"
+                android:gravity="center_horizontal"
+                android:autoText="false"
+                android:paddingTop="0dp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Weekdays"
+                android:id="@+id/textView14"
+                android:gravity="center"
+                android:textColor="#ae505050"
+                android:layout_gravity="center_horizontal" />
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="352dp"
+                android:layout_height="200dip"
+                android:id="@+id/graph" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
